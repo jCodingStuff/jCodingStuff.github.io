@@ -65,6 +65,7 @@ h2 {
   width: 40px;
   height: 40px;
   display: inline-block;
+  margin-right: 5px;
   border-radius: 50%;
 }
 
@@ -75,18 +76,22 @@ h2 {
 }
 
 #yt-icon {
+  color: #999;
   padding: 9px 9px;
 }
 
 #tw-icon {
+  color: #999;
   padding: 10px 10px;
 }
 
 #git-icon {
+  color: #999;
   padding: 9px 10.5px;
 }
 
 #in-icon {
+  color: #999;
   padding: 9px 11.5px;
 }
 
@@ -131,6 +136,9 @@ h2 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .md-mb-30 {
     margin-bottom: 30px;
+  }
+  #yt-bg {
+    margin-top: 8px;
   }
 }
 
