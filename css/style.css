@@ -76,23 +76,23 @@ h2 {
 }
 
 #yt-icon {
-  color: #999;
   padding: 9px 9px;
 }
 
 #tw-icon {
-  color: #999;
   padding: 10px 10px;
 }
 
 #git-icon {
-  color: #999;
   padding: 9px 10.5px;
 }
 
 #in-icon {
-  color: #999;
   padding: 9px 11.5px;
+}
+
+#tv-icon {
+  padding: 10.5px 9.5px;
 }
 
 .segment-four h2 {
@@ -142,6 +142,28 @@ h2 {
   .md-mb-30 {
     margin-bottom: 30px;
   }
+}
+
+/* Responsive CSS */
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+  #tv-bg {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 273px) {
+  #tv-bg {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  #yt-bg {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 223px) {
   #yt-bg {
     margin-top: 8px;
   }
