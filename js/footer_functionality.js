@@ -7,13 +7,13 @@ $(document).ready(function(){
       // console.log('Animating ' + iconName);
       $(iconName).animate({
         color: 'white'
-      }, 200);
+      }, 100);
     }, function() {
       // console.log('Leaving ' + bgName);
       // console.log('Animating ' + iconName);
       $(iconName).animate({
         color: '#999'
-      }, 200);
+      }, 100);
     });
   }
 });
