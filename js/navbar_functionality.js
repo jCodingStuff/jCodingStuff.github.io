@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Do the hover thing for the items
   $('.my-navlink').hover(function() {
     $(this).animate({
       color: 'white'
@@ -8,6 +9,10 @@ $(document).ready(function() {
       color: '#d9d9d9'
     }, 100);
   });
+  // Override the resize function
+  $(window).resize(function(e) {
+        screen_resize();
+    });
 });
 
 function responsiveNavbar() {
@@ -18,5 +23,12 @@ function responsiveNavbar() {
   } else {
     x.className = 'sticky-top my-navbar';
     $('.navbar-list').css('display', 'none');
+  }
+}
+
+function screen_resize() {
+  let w = parseInt(window.innerWidth);
+  if (w > 600) {
+    $('.navbar-list').css('display', 'inline');
   }
 }
