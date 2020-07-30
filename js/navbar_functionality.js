@@ -9,3 +9,14 @@ $(document).ready(function() {
     }, 100);
   });
 });
+
+function responsiveNavbar() {
+  let x = $('#the-navbar')[0];
+  if (x.className == 'sticky-top my-navbar') {
+    x.className += ' responsive';  // Add the responsive class
+    $('.navbar-list').css('display', 'inline');
+  } else {
+    x.className = 'sticky-top my-navbar';
+    $('.navbar-list').css('display', 'none');
+  }
+}

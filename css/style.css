@@ -142,6 +142,7 @@ h2 {
 
 /* Navbar */
 .navbar-list {
+  display: inline;
   list-style-type: none;
   margin: 0;
   padding: 10px;
@@ -191,6 +192,14 @@ a.my-navlink {
   margin-left: 20px;
 }
 
+/* Hide the navbar icon for small screents */
+.my-navbar .icon {
+  display: none;
+  font-size: 30px;
+  color: #999;
+  margin-right: 10px;
+}
+
 
 /* Responsive CSS */
 
@@ -232,5 +241,48 @@ a.my-navlink {
   }
   .footer-top {
     padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .my-navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the my-navbar with JavaScript when the user
+clicks on the icon. This class makes the topnav look good on small screens
+(display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .my-navbar.responsive {position: relative;}
+  .my-navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .my-navbar ul li {
+    float: none;
+    display: block;
+    padding: 10px;
+    text-align: left;
+  }
+  .my-navbar.responsive ul li.big-navbar-ele {
+    display: none;
+  }
+  a.my-navlink {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .my-navlink-left {
+    margin-right: 0;
+  }
+
+  .my-navlink-right {
+    margin-left: 0;
   }
 }
