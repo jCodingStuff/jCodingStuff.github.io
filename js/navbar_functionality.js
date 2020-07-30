@@ -19,9 +19,12 @@ function responsiveNavbar() {
   let x = $('#the-navbar')[0];
   if (x.className == 'sticky-top my-navbar') {
     x.className += ' responsive';  // Add the responsive class
-    $('.navbar-list').css('display', 'inline');
   } else {
     x.className = 'sticky-top my-navbar';
+  }
+  if ($('.navbar-list').css('display') == 'none') {
+    $('.navbar-list').css('display', 'inline');
+  } else {
     $('.navbar-list').css('display', 'none');
   }
 }
@@ -29,6 +32,8 @@ function responsiveNavbar() {
 function screen_resize() {
   let w = parseInt(window.innerWidth);
   if (w > 600) {
-    $('.navbar-list').css('display', 'inline');
+    $('.navbar-list').css('display', 'block');
+  } else {
+    $('.navbar-list').css('display', 'none');
   }
 }
