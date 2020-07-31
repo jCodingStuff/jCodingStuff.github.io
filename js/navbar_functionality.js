@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  // Do the hover thing for the items
+
+  // Do the hover highlighting for the items
   $('.my-navlink').hover(function() {
     $(this).animate({
       color: 'white'
@@ -9,8 +10,17 @@ $(document).ready(function() {
       color: '#d9d9d9'
     }, 100);
   });
-  // Override the resize function
-  $(window).resize(function(e) {
-        screen_resize();
-    });
+
+  // Navbar button
+  $('#navbar-button').click(function() {
+    // Change appearance of button
+    if ($(this).text() == '☰') {
+      $(this).text('x');
+    } else {
+      $(this).text('☰');
+    }
+    // Toggling visibility of <li> elements
+    $('.small-navbar-ele').toggle('slow');
+  });
+
 });
