@@ -16,8 +16,10 @@ $(document).ready(function() {
     // Change appearance of button
     if ($(this).text() == '☰') {
       $(this).text('x');
+      $(this).css('font-size', '32px');
     } else {
       $(this).text('☰');
+      $(this).css('font-size', '30px');
     }
     // Toggling visibility of <li> elements
     $('.small-navbar-ele').toggle('slow');
