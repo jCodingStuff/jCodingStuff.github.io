@@ -1,6 +1,6 @@
 /* Regular CSS */
 
-p {
+p.footer-p {
   color: #999;
   line-height: 25px;
 }
@@ -137,6 +137,10 @@ h2 {
 .footer-bottom-text a {
   color: #999;
   text-decoration: none;
+}
+
+#name-footer-bot {
+  color: #999;
 }
 
 /* Responsive CSS */
