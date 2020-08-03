@@ -25,4 +25,14 @@ $(document).ready(function() {
     $('.small-navbar-ele').toggle('slow');
   });
 
+  // Navbar links --> Scroll to section with offset of the Navbar!
+  let secs = ['home', 'research', 'projects', 'cv']
+  for (const sec of secs) {
+    $("#" + sec + '_nav').click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#" + sec + '_sec').offset().top - $('#the-navbar').outerHeight()
+      }, 500);
+    });
+  }
+
 });
