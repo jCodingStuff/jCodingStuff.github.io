@@ -1,0 +1,99 @@
+/* Regular CSS */
+
+.navbar-list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar-list li {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+.my-navbar {
+  background: #000;
+}
+
+#name-navbar {
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.dash {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 0px;
+}
+
+a.my-navlink {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.my-navlink-left {
+  margin-right: 20px;
+}
+
+.my-navlink-right {
+  margin-left: 20px;
+}
+
+#navbar-button {
+  display: none;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 600px) {
+  .navbar-list li {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+  }
+  li.big-navbar-ele {
+    display: none;
+  }
+  a.my-navlink {
+    font-size: 18px;
+  }
+  .my-navlink-left {
+    margin-right: 0;
+  }
+  .my-navlink-right {
+    margin-left: 0;
+  }
+  li.small-navbar-ele {
+    display: none;
+  }
+  #navbar-button {
+    /*makes the button visible*/
+    display: block;
+    /*since we are here, we can style it a little bit!*/
+    padding: 0;
+    margin-left: 5px;
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+  }
+}
