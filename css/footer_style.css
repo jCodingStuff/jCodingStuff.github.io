@@ -3,6 +3,7 @@
 p.footer-p {
   color: #999;
   line-height: 25px;
+  text-align: justify;
 }
 
 h2, h3 {
@@ -21,7 +22,7 @@ h2 {
 #name-footer {
   color: #fff;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 0px 0;
 }
 
 .segment-two h2 {
@@ -78,11 +79,11 @@ h2 {
 }
 
 #yt-icon {
-  padding: 9px 9px;
+  padding: 9.5px 9px;
 }
 
 #tw-icon {
-  padding: 10px 10px;
+  padding: 9.5px 10px;
 }
 
 #git-icon {
@@ -93,8 +94,8 @@ h2 {
   padding: 9px 11.5px;
 }
 
-#tv-icon {
-  padding: 10.5px 9.5px;
+#ig-icon {
+  padding: 10px 10.5px;
 }
 
 .segment-four h2 {
@@ -152,13 +153,13 @@ h2 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 1199px) {
-  #tv-bg {
+  #ig-bg {
     margin-top: 8px;
   }
 }
 
 @media only screen and (max-width: 273px) {
-  #tv-bg {
+  #ig-bg {
     margin-top: 8px;
   }
 }

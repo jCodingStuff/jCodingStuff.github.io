@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 
   // Navbar links --> Scroll to section with offset of the Navbar!
-  let secs = ['home', 'research', 'projects', 'cv']
+  let secs = ['home', 'research', 'projects', 'cv'];
   for (const sec of secs) {
     $("#" + sec + '_nav').click(function() {
       $([document.documentElement, document.body]).animate({

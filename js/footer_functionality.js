@@ -1,4 +1,4 @@
-const SOCIALS = ['tw', 'in', 'git', 'yt', 'tv'];
+const SOCIALS = ['tw', 'in', 'git', 'yt', 'ig'];
 
 $(document).ready(function(){
 
@@ -27,5 +27,15 @@ $(document).ready(function(){
       color: '#999'
     }, 100);
   });
+
+  // Footer section links --> Scroll to section with offset of the Navbar!
+  let secs = ['home', 'research', 'projects', 'cv'];
+  for (const sec of secs) {
+    $("#" + sec + '_foot').click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#" + sec + '_sec').offset().top - $('#the-navbar').outerHeight()
+      }, 500);
+    });
+  }
 
 });
